@@ -15,7 +15,8 @@
         android:onClick="share_image"
         android:text="Compartir Imagen"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="51dp" />
 
     <com.twitter.sdk.android.core.identity.TwitterLoginButton
         android:id="@+id/twitter_login_button"
@@ -26,7 +27,8 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btnCompartir"
         android:layout_marginLeft="47dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="47dp" />
 
     <Button
         android:id="@+id/btnCompartir"
@@ -40,7 +42,9 @@
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp" />
 
     <EditText
         android:id="@+id/edtTweet"
@@ -52,6 +56,22 @@
         android:inputType="textPersonName"
         android:text="Mensaje"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCompartir" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCompartir"
+        android:layout_marginStart="47dp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="351dp"
+        android:layout_height="240dp"
+        app:srcCompat="@color/tw__composer_deep_gray"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtTweet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintVertical_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

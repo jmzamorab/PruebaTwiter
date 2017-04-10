@@ -20,6 +20,8 @@
             android:name="io.fabric.ApiKey"
             android:value="1671baf75dfd4d3ec8ce9ff8d826706c86470080" />
     </application>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
